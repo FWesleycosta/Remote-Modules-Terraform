@@ -1,0 +1,17 @@
+name: 'Deploy Project - Create Pull Request'
+
+on:
+  pull_request:
+    branches:
+      - development
+
+permissions:
+  contents: read
+  packages: write
+  actions: write
+
+jobs:
+  create-pull-request:
+    uses: FWesleycosta/Reusable-Actions/.github/workflows/create-pull-request.yml@v1.0.2
+    with:
+      destination-branch: 'main'
