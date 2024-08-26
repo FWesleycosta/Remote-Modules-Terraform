@@ -1,4 +1,4 @@
-name: 'Deploy Project - Create Pull Request'
+name: 'Create Pull Request'
 
 on:
   pull_request:
@@ -12,6 +12,6 @@ permissions:
 
 jobs:
   create-pull-request:
-    uses: FWesleycosta/Reusable-Actions/.github/workflows/create-pull-request.yml@v1.0.2
+    uses: FWesleycosta/Reusable-Actions/.github/workflows/create-pull-request.yml@v1.1.0
     with:
       destination-branch: 'main'
